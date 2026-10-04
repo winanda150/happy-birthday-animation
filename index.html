@@ -1,0 +1,46 @@
+<!-- ==========================================================================
+   🎉 PROJECT   : Happy Birthday Animation
+   📄 FILE      : index.html
+   👨‍💻 AUTHOR    : WinandaDev
+   📅 CREATED   : 25 August 2025
+   💖 DEDICATION: For my sister Kirana (Born 18 November 2010)
+   📝 DETAIL    : Halaman utama animasi interaktif kembang api & balon ulang tahun
+   ========================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 🌐 META DATA & VIEWPORT: Pengaturan karakter dan responsivitas layar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+
+    <!-- 🎨 ASSETS & STYLING: Favicon, Google Typography, & Stylesheet -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- 🎵 TOMBOL MUSIK: Tombol bulat mengambang untuk toggle audio player -->
+    <div class="Tombol">
+        <img src="assets/images/sound-icon.png" alt="Sound Icon">
+    </div>
+
+    <!-- 🔊 AUDIO ELEMENT: Pemutar lagu selamat ulang tahun (loop & controls) -->
+    <audio id="audioTombol" src="assets/audio/birthday-song.mp3" loop controls draggable="false" style="display:none;
+        position:fixed;
+        top:20px;
+        left:15px;
+        z-index:3">
+    </audio>
+
+    <!-- 🎆 CANVAS: Area panggung rendering kembang api, partikel teks, dan balon -->
+    <canvas id="c"></canvas>
+
+    <!-- ⚙️ LOGIKA UTAMA: Skrip JavaScript animasi kanvas & interaktivitas -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
